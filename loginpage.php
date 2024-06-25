@@ -10,7 +10,7 @@
 <body>
     <class="container" id="signIN">
         <h1 class="form-title">Sign In</h1>
-        <form method="post" action="">
+        <form method="post" action="register.php">
             <div class="input-group">
                 <i class="fas fa-envelope"></i>
                 <input type="email" name="email" id="email" placeholder="Email" required>
