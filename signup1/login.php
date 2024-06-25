@@ -55,9 +55,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
   }
   ?>
 
-    <h1 class="text-center">Login to our website</h1>
+    <h1 class="text-center">Login Page</h1>
     <div class="container mt-5">
-        <form action="login.php" method="post">
+        <form action="login.php" method="post" >
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
                 <input type="text" class="form-control" placeholder="Enter your username" name="username">
