@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +29,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-=======
 //wayne's update
->>>>>>> 34fab45ea664f80e6c806f2d77c2d7a13260df84
