@@ -9,7 +9,7 @@
 <body>
 <div class="container">
         <h1>Login</h1>
-        <form action="connet.php" method="POST">
+        <form action="connect.php" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="email">
             <label for="password">Password</label>
