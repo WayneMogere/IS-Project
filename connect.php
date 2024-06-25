@@ -2,7 +2,7 @@
 $host="localhost"
 $user="root"
 $password=""
-$db="ISProject"
+$db="login_db"
 
 $connect = new mysqli($host, $user, $password, $db);
 
