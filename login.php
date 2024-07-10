@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <h1>Login</h1>
         <form action="connect.php" method="post">
             <label for="username">Username</label>
@@ -16,6 +16,7 @@
             <input type="password" id="password" name="password" placeholder="password" required>
             <button type="submit">Log In</button>
         </form>
+        
     </div>
 </body>
 </html>
