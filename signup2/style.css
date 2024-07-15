@@ -21,8 +21,8 @@ h1 {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
 }
 
 label {
@@ -50,5 +50,3 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-
-/*Wayne's Code*/

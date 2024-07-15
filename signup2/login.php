@@ -16,7 +16,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
             $_SESSION['email']=$email;
             header('location:home.html');
         }else{
-            echo "something went wrong";
+            echo "Wrong Credentials";
+            header('location:login.html');
         }
     }
 }

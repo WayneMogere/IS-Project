@@ -4,15 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome page</title>
+    <title>Home page</title>
   </head>
   
   <body>
-    <h1>Welcome</h1>
+    <header style="text-align: right; padding: 10px;">
+      <div>
+        <a href="logout.php">
+          <img style="border-radius: 50%; max-width: 40px;" src="images/logout.jpg" alt="">
+        </a>
+      </div>
 
-    <div>
-        <a href="logout.php">Logout</a>
-    </div>
-    
+      <nav>
+        <a style="color: black;" href="logout.php">
+          <i class="fas fa-home"></i> logout
+        </a>
+      </nav>
+    </header>
+
+    <main>
+    <h1>How may we help you?</h1>
+    <br>
+    <section style="display: flex;">
+      <div style="padding: 10px; display: block; padding-left: 440px;">
+        <a href="lostitems.html">
+          <img style="border-radius: 50%; max-width: 100px;" src="images/lost.jpg" alt=""><br>
+        </a>
+        <a style="color: black;" href="lostitems.html">Have you lost an item?</a>
+      </div>
+
+      <div style="padding: 10px; display: block; padding-left: 30px;">
+        <a href="report.html">
+          <img style="border-radius: 50%; max-width: 100px;" src="images/report.jpg" alt=""><br>
+        </a>
+        <a style="color: black;" href="report.html">Have you found a lost item?</a>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
