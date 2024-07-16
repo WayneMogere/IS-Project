@@ -6,15 +6,18 @@
     <title>Report page</title>
 </head>
 <body>
-    <header>
 
+    <header>
+        <a href="home.html">
+            <img style="max-width: 40px; border-radius: 50%;" src="images/back.jpg" alt="">
+        </a>
     </header>
 
     <main>
         
         <div class="form-div">
             <h2 style="text-align: center;">Report Form</h2>
-            <form class="report-form" method="POST" action="php/contact.php">
+            <form class="report-form" method="POST" action="report.php">
                 <div style="padding: 5px;">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required>
@@ -24,8 +27,8 @@
                     <input type="email" name="email" id="email" required>
                 </div>
                 <div style="padding: 5px;">
-                    <label for="id">Student ID:</label>
-                    <input type="text" name="id" id="id" required>
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" name="studentid" id="studentid" required>
                 </div>
                 <div style="padding: 5px; display: flex;">
                     <label for="description">Item Description: </label>
@@ -36,7 +39,7 @@
                 </div>
             </form>
         </div>
-        <h4>NB: After filling this form please report to the lost and found located in Phase 1 as soon as possible.</h4>
+        <h4>NB: After filling this form please report the item to the lost and found located in Phase 1 as soon as possible.</h4>
     </main>
 </body>
 </html>
