@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Lost and Found Items</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; padding-top: 20px; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0; }
+        input, textarea, select { width: 100%; padding: 8px; margin: 5px 0; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        .item { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Lost and Found Items</h1>
+        <form id="addItemForm">
+            <h2>Add New Item</h2>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="location">Location Found:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="date">Date Found:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image">
+            
+            <button type="submit">Add Item</button>
+        </form>
+        
+        <div id="itemsList">
+            <h2>Current Lost Items</h2>
+            <!-- Dynamically filled with items -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('addItemForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Code to add the item to the list and possibly send it to the server
+            alert('Item added successfully!');
+        });
+
+        // Example function to remove an item. You'll need to implement the logic to actually remove items.
+        function removeItem(itemId) {
+            // Remove item from the list and possibly inform the server
+            alert('Item removed successfully!');
+        }
+    </script>
+</body>
+</html>
