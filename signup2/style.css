@@ -121,3 +121,141 @@ h2 {
     border-radius: 5px;
     width: 30%;
 }
+
+/*alex personnel*
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+header .container {
+    margin-bottom: -1px;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0 5px 0;
+}
+
+form input[type="text"], form input[type="password"], form input[type="date"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    border-radius: 5px;
+}
+
+/* Dashboard Styles */
+#lost-items {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    border-radius: 5px;
+}
+
+#lost-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#lost-items table th, #lost-items table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#lost-items table th {
+    background: #333;
+    color: #fff;
+}
+
+#lost-items table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}

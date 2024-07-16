@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Lost Item</title>
+    <title>Remove Lost Item</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,17 +20,16 @@
             </nav>
         </header>
         <main>
-            <h2>Add Lost Item</h2>
-            <form action="add_item.php" method="post">
-                <label for="item_name">Item Name:</label>
-                <input type="text" id="item_name" name="item_name" required>
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-                <label for="date_lost">Date Lost:</label>
-                <input type="date" id="date_lost" name="date_lost" required>
-                <input type="submit" value="Add Item">
+            <h2>Remove Lost Item</h2>
+            <form action="remove_item.php" method="post">
+                <label for="item_id">Item ID:</label>
+                <input type="number" id="item_id" name="item_id" required>
+                <input type="submit" value="Remove Item">
             </form>
         </main>
+        <footer>
+            <p>&copy; 2024 Lost and Found. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
