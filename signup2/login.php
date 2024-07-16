@@ -15,10 +15,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
             echo "login successfully";
             session_start();
             $_SESSION['email']=$email;
-            header('location:..home.html');
+            header('location:home.html');
         }else{
             echo "Wrong Credentials";
-            header('location:..login.html');
+            header('location:login.html');
         }
     }
 }

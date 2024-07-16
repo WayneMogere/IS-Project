@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Lost Item</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
             <h1>Lost and Found - Personnel</h1>
             <nav>
                 <ul>
-                    <li><a href="personnel_dashboard.html">Dashboard</a></li>
-                    <li><a href="add_item.html">Add Item</a></li>
-                    <li><a href="remove_item.html">Remove Item</a></li>
-                    <li><a href="personnel_logout.php">Logout</a></li>
+                    <li>
+                        <a href="personnel_dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="remove_items.html">Remove Item</a>
+                    </li>
+                    <li>
+                        <a href="personnel_logout.html">Logout</a>
+                    </li>
                 </ul>
             </nav>
         </header>
+
+    
         <main>
-            <h2>Add Lost Item</h2>
-            <form action="add_item.php" method="post">
-                <label for="item_name">Item Name:</label>
-                <input type="text" id="item_name" name="item_name" required>
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-                <label for="date_lost">Date Lost:</label>
-                <input type="date" id="date_lost" name="date_lost" required>
-                <input type="submit" value="Add Item">
-            </form>
+            <div class="container">
+                <form action="add_item.php" method="post">
+                    <h2>Add Lost Item</h2>
+                    <label for="item_name">Item Name:</label>
+                    <input type="text" id="item_name" name="item_name" required><br>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea><br>
+                    <label for="date_lost">Date Lost:</label>
+                    <input type="date" id="date_lost" name="date_lost" required><br>
+                    <input type="submit" value="Add Item">
+                </form>
+            </div>
         </main>
-    </div>
+    
 </body>
 </html>

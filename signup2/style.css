@@ -50,6 +50,12 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+header a:hover{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 
 /*alex*/
@@ -66,7 +72,7 @@ body {
     overflow: hidden;
 }
 
-header {
+header{
     background: #333;
     color: #fff;
     padding-top: 30px;
