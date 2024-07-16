@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report page</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        
+        <div class="form-div">
+            <h2 style="text-align: center;">Report Form</h2>
+            <form class="report-form" method="POST" action="php/contact.php">
+                <div style="padding: 5px;">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div style="padding: 5px;">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div style="padding: 5px;">
+                    <label for="id">Student ID:</label>
+                    <input type="text" name="id" id="id" required>
+                </div>
+                <div style="padding: 5px; display: flex;">
+                    <label for="description">Item Description: </label>
+                    <textarea name="description" id="description" rows="4" required></textarea>
+                </div>
+                <div style="padding: 5px;">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <h4>NB: After filling this form please report to the lost and found located in Phase 1 as soon as possible.</h4>
+    </main>
+</body>
+</html>
