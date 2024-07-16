@@ -127,6 +127,9 @@ h2 {
     border-radius: 5px;
     width: 30%;
 }
+.menu{
+
+}
 
 /*alex personnel*
 /* General Styles */
@@ -194,26 +197,25 @@ form {
 }
 
 form label {
-    display: block;
     margin: 5px 0 5px 0;
 }
 
 form input[type="text"], form input[type="password"], form input[type="date"], form textarea {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form input[type="submit"] {
+form button[type="submit"] {
     width: 100%;
     background: #333;
     color: #fff;
     border: 0;
     padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 form input[type="submit"]:hover {
@@ -264,4 +266,5 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 20px;
+    border-radius: 10px;
 }

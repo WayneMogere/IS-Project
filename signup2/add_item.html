@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-            <h1>Lost and Found - Personnel</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="personnel_dashboard.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="remove_items.html">Remove Item</a>
-                    </li>
-                    <li>
-                        <a href="personnel_logout.html">Logout</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-    
+    <header style="padding-top: 0; padding: 10px;">
+        <h1>Lost and Found - Personnel</h1>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="personnel_dashboard.php">Dashboard</a>
+                </li>
+                <li>
+                    <a href="remove_item.html">Remove Item</a>
+                </li>
+                <li>
+                    <a href="personnel_logout.php">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
         <main>
             <div class="container">
                 <form action="add_item.php" method="post">
@@ -35,17 +34,13 @@
                     <textarea id="description" name="description" required></textarea><br>
                     <label for="date_lost">Date Lost:</label>
                     <input type="date" id="date_lost" name="date_lost" required><br>
-                    <input type="submit" value="Add Item">
+                    <button type="submit">Add item</button>
                 </form>
             </div>
         </main>
-<<<<<<< HEAD:signup2/add_items.html
-    
-=======
-        <footer>
-            <p>&copy; 2024 Lost and Found. All rights reserved.</p>
-        </footer>
     </div>
->>>>>>> 812ce722052386bf8e133486e49f3aaf0d5bbc3b:signup2/add_item.html
+    <footer>
+        <p>&copy; 2024 Lost and Found. All rights reserved.</p>
+    </footer>
 </body>
 </html>

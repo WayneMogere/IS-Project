@@ -13,7 +13,7 @@ $sql="INSERT INTO `report`(`name`, `email`, `studentid`, `description`)
 $result=mysqli_query($conn,$sql);
 if($result){
     echo'Thank you for your help';
-    header('location:home.html');
+    header('location:student_dashboard.html');
   }
 else{
     die(mysqli_error($conn));

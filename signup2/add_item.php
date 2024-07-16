@@ -2,11 +2,6 @@
 include 'db.php';
 session_start();
 
-if (!isset($_SESSION['personnel_username'])) {
-    header("Location: personnel_login.html");
-    exit;
-}
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $item_name = $conn->real_escape_string($_POST['item_name']);
     $description = $conn->real_escape_string($_POST['description']);
@@ -19,6 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+}
+if (!isset($_SESSION['personnel_username'])) {
+    header("Location: personnel_dashboard.php");
+    exit;
 }
 $conn->close();
 ?>

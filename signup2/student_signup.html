@@ -8,9 +8,14 @@
   </head>
 
   <body>
-    <h1>Sign up page</h1>
-    <div class="form">
-        <form action="signup.php" method="post">
+    <br>
+    <div class="container">
+      <header style="border-radius: 10px; padding-left: 10px; padding-top: 0;">
+        <h1>Lost and Found - Students</h1>
+      </header>
+      <main>
+        <form style="padding-top: 0;" action="student_signup.php" method="post">
+          <h2 class="text-center">Sign up Page</h2>
             <div>
                 <label for="StudentID">Student ID</label>
                 <input type="text" name="studentid" placeholder="Enter your Student ID" required>
@@ -28,8 +33,9 @@
             
             <button type="submit">Sign Up</button><br>
             <br>
-            <a href="login.html">Already have an account?</a>
+            <a href="student_login.html">Already have an account?</a>
         </form>
+      </main>
     </div>
     
   </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remove Lost Item</title>
+    <title>Personnel Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +12,10 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="personnel_dashboard.php">Dashboard</a>
+                    <a href="add_item.html">Add Item</a>
                 </li>
                 <li>
-                    <a href="add_item.html">Add Item</a>
+                    <a href="remove_item.html">Remove Item</a>
                 </li>
                 <li>
                     <a href="personnel_logout.php">Logout</a>
@@ -24,20 +24,17 @@
         </nav>
     </header>
     <br>
-    <br>
-    <br>
-    
     <div class="container">
+        
         <main>
-            <h2>Remove Lost Item</h2>
-            <form action="remove_item.php" method="post">
-                <label for="item_id">Item ID:</label>
-                <input type="number" id="item_id" name="item_id" required>
-                <input type="submit" value="Remove Item">
-            </form>
+            <h2>Dashboard</h2>
+            <div id="lost-items">
+                <?php include 'list_item.php'; ?>
+            </div>
         </main>
+        
     </div>
-    <footer style="margin-top: 93px;">
+    <footer>
         <p>&copy; 2024 Lost and Found. All rights reserved.</p>
     </footer>
 </body>

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $password = $_POST['password'];
     $hashedPassword = md5($password);
 
-    $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$hashedPassword'";
+    $sql = "SELECT * FROM student WHERE email = '$email' AND password = '$hashedPassword'";
 
     $result=mysqli_query($conn,$sql);
     if($result){
@@ -15,10 +15,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
             echo "login successfully";
             session_start();
             $_SESSION['email']=$email;
-            header('location:home.html');
+            header('location:student_dashboard.html');
         }else{
             echo "Wrong Credentials";
-            header('location:login.html');
+            header('location:student_login.html');
         }
     }
 }

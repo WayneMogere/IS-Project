@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
+  </head>
+
+  <body>
+    <br>
+    <div class="container">
+        <header style="border-radius: 10px; padding-left: 10px; padding-top: 0;">
+          <h1>Lost and Found - Students</h1>
+        </header>
+        <main style="padding-top: 0;">
+          <form action="student_login.php" method="post" >
+              <h2 class="text-center">Login Page</h2>
+              <div>
+                  <label for="Email">Email:</label>
+                  <input type="text" name="email" placeholder="Enter your email" required>
+              </div>
+              <div>
+                  <label for="exampleInputPassword1">Password:</label>
+                  <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+
+              <button type="submit">Login</button><br>
+              <br>
+              <a href="student_signup.html">Dont have an account?</a>
+          </form>
+        </main>
+    </div>
+    
+   </body>
+</html>

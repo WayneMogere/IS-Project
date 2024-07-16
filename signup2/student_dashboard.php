@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['email'])){
-    header('location:home.html');
+    header('location:student_dashboard.html');
 }
 
 ?>
@@ -20,7 +20,7 @@ if(!isset($_SESSION['email'])){
     <h1>Welcome</h1>
 
     <div>
-        <a href="logout.php">Logout</a>
+        <a href="student_logout.php">Logout</a>
     </div>
     
   </body>
