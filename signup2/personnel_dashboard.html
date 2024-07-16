@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lost and Found - Personnel</h1>
+            <nav>
+                <ul>
+                    <li><a href="personnel_dashboard.html">Dashboard</a></li>
+                    <li><a href="add_item.html">Add Item</a></li>
+                    <li><a href="remove_item.html">Remove Item</a></li>
+                    <li><a href="personnel_logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Dashboard</h2>
+            <div id="lost-items">
+                <?php include 'list_items.php'; ?>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
