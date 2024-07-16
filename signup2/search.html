@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Lost Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lost and Found</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Search Lost Items</h2>
+            <form action="search_results.php" method="post">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" required>
+                <input type="submit" value="Search">
+            </form>
+            <div id="search-results">
+                <!-- Search results will be displayed here -->
+                <?php include 'search_results.php'; ?>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
