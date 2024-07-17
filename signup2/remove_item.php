@@ -10,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "DELETE FROM lost_items WHERE id = '$item_id'";
     
     if ($conn->query($sql) === TRUE) {
-        echo "Item removed successfully";
+        header("Location: personnel_dashboard.php");
+        exit;
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

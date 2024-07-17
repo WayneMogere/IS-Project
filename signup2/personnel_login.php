@@ -12,9 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if ($result->num_rows > 0) {
         $_SESSION['personnel_username'] = $username;
-        header("Location: personnel_dashboard.html");
+        header("Location: personnel_dashboard.php");
     } else {
-        echo "Invalid username or password.";
+        header("location: personnel_login.html");
     }
 }
 $conn->close();

@@ -10,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO lost_items (item_name, description, date_lost) VALUES ('$item_name', '$description', '$date_lost')";
     
     if ($conn->query($sql) === TRUE) {
-        echo "New lost item added successfully";
+        header("Location: personnel_dashboard.php");
+        exit;
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
