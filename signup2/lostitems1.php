@@ -43,7 +43,6 @@
                 while($row = $result->fetch_assoc()) {
                     echo "<div style='margin-left: 410px;' class='item'>";
                     echo "<div><a style='color: black; padding-left: 250px;' href='lostitems1.php'>Cancel Search</a></div>";
-                    echo "<h2> Search Results: </h2>";
                     echo "<h3>" . $row["item_name"] . "</h3>";
                     echo "<p>" . $row["description"] . "</p>";
                     echo "<p>Date Lost: " . $row["date_lost"] . "</p>";
