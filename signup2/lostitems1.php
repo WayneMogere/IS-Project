@@ -1,23 +1,4 @@
-<?php
-include_once('db.php');
 
-//collect
-if (isset($_POST['search'])){
-    $searchq = $_POST['search'];
-    $searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
-    $sql = mysql_query("SELECT * FROM report WHERE 'description' LIKE '%$searchq%'") or die("could not search");
-    $count = mysql_num_rows($sql);
-    if($count == 0){
-        $output = 'There was no search results!';
-    }else{
-        while($row = mysql_fetch_array($sql)){
-            $description = $row['description'];
-
-            $output .= '<div>'.$description.'</div>';
-        }
-    }
-}
-?>
 
 
 
@@ -44,11 +25,38 @@ if (isset($_POST['search'])){
     </header>
 
     <main>
-        <form style="" method="post" action="lostitems.php">
+        <form style="" method="post" action="lostitems1.php">
             <input type="text" name="search" placeholder="Search for item" required> 
             <button>Search</button>
         </form>
+
+        <?php
+        include_once('db.php');
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $search = $conn->real_escape_string($_POST['search']);
+            
+            $sql = "SELECT id, item_name, description, date_lost FROM lost_items WHERE item_name LIKE '%$search%' OR description LIKE '%$search%'";
+            $result = $conn->query($sql);
+            
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<div style='margin-left: 410px;' class='item'>";
+                    echo "<div><a style='color: black; padding-left: 250px;' href='lostitems1.php'>Cancel Search</a></div>";
+                    echo "<h2> Search Results: </h2>";
+                    echo "<h3>" . $row["item_name"] . "</h3>";
+                    echo "<p>" . $row["description"] . "</p>";
+                    echo "<p>Date Lost: " . $row["date_lost"] . "</p>";
+                    echo "</div>";
+                }
+            } else {
+                echo "No items matched your search.<a style='color: black;' href='lostitems1.php'>OK</a>" ;
+            }
+        }
+        ?>
+
         <div class="container">
+            <h2>Lost Items:</h2>
             <div id="lost-items">
                 <?php include 'list_item.php'; ?>
             </div>
