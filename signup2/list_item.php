@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$sql = "SELECT id, item_name, description, date_lost FROM lost_items";
+$sql = "SELECT id, item_name, description, date_lost, date_claimed FROM lost_items";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -9,7 +9,13 @@ if ($result->num_rows > 0) {
         echo "<div class='item'>";
         echo "<h3>" . $row["item_name"] . "</h3>";
         echo "<p>" . $row["description"] . "</p>";
-        echo "<p>Date Lost: " . $row["date_lost"] . "</p>";
+        echo "<p>Date Reported: " . $row["date_lost"] . "</p>";
+        if($row['date_claimed']){
+            echo "<td> Date Claimed:" . htmlspecialchars($row['date_claimed']) . "</td>";
+        }else{
+            echo "<td>Unclaimed</td>";
+        }
+        echo "<p>id: " . $row["id"] . "</p>";
         echo "</div>";
     }
 } else {

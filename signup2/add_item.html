@@ -18,6 +18,9 @@
                     <a href="remove_item.html">Remove Item</a>
                 </li>
                 <li>
+                    <a href="personnel_report.php">Report</a>
+                </li>
+                <li>
                     <a href="personnel_logout.php">Logout</a>
                 </li>
             </ul>

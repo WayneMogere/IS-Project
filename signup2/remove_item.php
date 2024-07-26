@@ -6,8 +6,9 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $item_id = $conn->real_escape_string($_POST['item_id']);
+    $date = $_POST['date'];
     
-    $sql = "DELETE FROM lost_items WHERE id = '$item_id'";
+    $sql = "UPDATE lost_items SET date_claimed = '$date' WHERE  id = '$item_id'";
     
     if ($conn->query($sql) === TRUE) {
         header("Location: personnel_dashboard.php");

@@ -46,6 +46,7 @@
                     echo "<h3>" . $row["item_name"] . "</h3>";
                     echo "<p>" . $row["description"] . "</p>";
                     echo "<p>Date Lost: " . $row["date_lost"] . "</p>";
+                    echo "<p>id: " . $row["id"] . "</p>";
                     echo "</div>";
                 }
             } else {
